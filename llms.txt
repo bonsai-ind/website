@@ -1,0 +1,19 @@
+# Inspirium Tech
+
+> Inspirium Tech Pvt Ltd (Ahmedabad, India) builds Vera.1, an AI infant monitor that reads a baby's breathing, temperature, heart rate and cries from across the room, with nothing worn by the baby. It tells parents why the baby is crying, catches fever and breathing changes early, calls parents in an emergency, and produces reports pediatricians can use.
+
+Key facts:
+
+- Product: Vera.1, an AI-powered, non-contact infant monitor (camera + infrared thermal sensor + microphone, fused by AI).
+- No wearables: nothing touches the baby's skin. No socks, straps or wires.
+- What it does: explains cries (hunger, pain, tiredness, distress), detects fever early, tracks breathing and heart rate, captures milestones, calls parents when a cry crosses into real distress or the baby is in a dangerous position, connects to on-call pediatricians with the baby's data attached.
+- Differs from competitors: Nanit and Cubo AI are smart cameras without vitals; Owlet and Masimo Stork read vitals but require wearables. Vera.1 does vitals plus cry understanding with no wearables.
+- Markets: direct-to-consumer in Indian metros first (Mumbai, Bengaluru, Delhi, Pune, Ahmedabad), then NICU and pediatric hospitals, then public-health deployment.
+- Launch price: ₹30,000 including the first year's subscription.
+- Founders: Jeet Patel (Founder & Product Lead) and Nayan Mevada (Co-Founder & Tech Lead). Both fathers.
+- Stage: working prototype (Prototype 2), validated with 7 doctors and 11 parents. Raising ₹21 crores for 15% equity.
+- Contact: contact@inspiriumtech.com
+
+## Pages
+
+- [Home](https://www.inspiriumtech.com/): the full story — problem, product, roadmap, market, team, FAQ, and the ask.

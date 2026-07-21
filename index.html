@@ -5,10 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Inspirium Tech · Vera.1 · Decoding the Unheard Language</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0d12'/%3E%3Ccircle cx='12' cy='16' r='3.4' fill='%23f7c896'/%3E%3Cpath d='M18 10.5a8 8 0 0 1 0 11' stroke='%23f0b27a' stroke-width='1.8' stroke-linecap='round' fill='none'/%3E%3Cpath d='M21.5 7a13 13 0 0 1 0 18' stroke='%236fd6d0' stroke-width='1.8' stroke-linecap='round' fill='none' opacity='0.7'/%3E%3Cpath d='M6.5 13.5a4 4 0 0 0 0 5' stroke='%236fd6d0' stroke-width='1.8' stroke-linecap='round' fill='none'/%3E%3C/svg%3E" />
-<meta name="description" content="Inspirium Tech makes Vera.1, an infant monitor that reads a baby's breathing, temperature, heart rate and cries from across the room, and tells you what's actually going on. Nothing worn by the baby." />
-<meta property="og:title" content="Inspirium Tech, Decoding the Unheard Language" />
+<meta name="description" content="Inspirium Tech makes Vera.1, an AI infant monitor that reads a baby's breathing, temperature, heart rate and cries from across the room, and tells you what's actually going on. Nothing worn by the baby." />
+<link rel="canonical" href="https://www.inspiriumtech.com/" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<meta name="theme-color" content="#0a0d12" />
+<meta name="author" content="Inspirium Tech Pvt Ltd" />
+<meta property="og:site_name" content="Inspirium Tech" />
+<meta property="og:url" content="https://www.inspiriumtech.com/" />
+<meta property="og:title" content="Inspirium Tech · Decoding the Unheard Language" />
 <meta property="og:description" content="Vera.1 by Inspirium Tech. Not just a monitor, an interpreter. It reads your baby's vitals, watches, and listens, then tells you what's going on. Nothing worn by the baby." />
 <meta property="og:type" content="website" />
+<meta property="og:image" content="https://www.inspiriumtech.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Vera.1 by Inspirium Tech: the AI infant monitor that tells you why your baby is crying." />
+<meta property="og:locale" content="en_IN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Inspirium Tech · Decoding the Unheard Language" />
+<meta name="twitter:description" content="Vera.1: the AI infant monitor that tells you why your baby is crying. Vitals, vision and voice. Nothing worn by the baby." />
+<meta name="twitter:image" content="https://www.inspiriumtech.com/og-image.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -393,6 +408,28 @@
   .ms .mn { color: var(--cyan); font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 10px; }
   .ms p { color: var(--fg-dim); font-weight: 300; font-size: 0.94rem; }
 
+  /* ---------- faq ---------- */
+  .faq-list { max-width: 820px; }
+  .faq-item {
+    border-top: 1px solid var(--line);
+  }
+  .faq-item:last-child { border-bottom: 1px solid var(--line); }
+  .faq-item summary {
+    cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;
+    gap: 20px; padding: 24px 4px; font-family: 'Fraunces', serif; font-size: 1.22rem; font-weight: 400;
+    letter-spacing: -0.01em; transition: color 0.2s;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary:hover { color: var(--amber-bright); }
+  .faq-item summary .plus {
+    flex: none; width: 26px; height: 26px; border: 1px solid var(--line-2); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; font-family: 'Inter'; font-size: 15px;
+    color: var(--fg-dim); transition: transform 0.3s var(--ease), background 0.3s, color 0.3s;
+  }
+  .faq-item[open] summary { color: var(--amber-bright); }
+  .faq-item[open] summary .plus { transform: rotate(45deg); background: var(--amber); color: var(--ink); border-color: var(--amber); }
+  .faq-item .a { padding: 0 4px 26px; color: var(--fg-dim); font-weight: 300; font-size: 1rem; max-width: 700px; }
+
   /* ---------- demo / cta ---------- */
   .final { text-align: center; padding: 130px 0; }
   .final .quote {
@@ -423,6 +460,110 @@
     .reveal { opacity: 1; transform: none; }
   }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.inspiriumtech.com/#org",
+      "name": "Inspirium Tech Pvt Ltd",
+      "alternateName": "Inspirium Tech",
+      "url": "https://www.inspiriumtech.com/",
+      "logo": "https://www.inspiriumtech.com/logo.png",
+      "email": "contact@inspiriumtech.com",
+      "description": "Inspirium Tech builds Vera.1, an AI infant monitor that reads a baby's breathing, temperature, heart rate and cries from across the room, with nothing worn by the baby.",
+      "foundingDate": "2026",
+      "founder": [
+        { "@type": "Person", "name": "Jeet Patel", "jobTitle": "Founder & Product Lead" },
+        { "@type": "Person", "name": "Nayan Mevada", "jobTitle": "Co-Founder & Tech Lead" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ahmedabad",
+        "addressRegion": "Gujarat",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contact@inspiriumtech.com",
+        "contactType": "sales"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.inspiriumtech.com/#website",
+      "url": "https://www.inspiriumtech.com/",
+      "name": "Inspirium Tech",
+      "publisher": { "@id": "https://www.inspiriumtech.com/#org" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.inspiriumtech.com/#vera1",
+      "name": "Vera.1",
+      "brand": { "@id": "https://www.inspiriumtech.com/#org" },
+      "category": "Baby Monitor",
+      "image": "https://www.inspiriumtech.com/og-image.png",
+      "description": "Vera.1 is an AI infant monitor that watches breathing, temperature, heart rate and cries from across the room, with nothing attached to the baby. It tells cries apart by cause, catches fever early, calls you when something is really wrong, and turns weeks of readings into a report your pediatrician can use.",
+      "offers": {
+        "@type": "Offer",
+        "price": "30000",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/PreOrder",
+        "url": "https://www.inspiriumtech.com/",
+        "description": "Launch price includes the first year's subscription."
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.inspiriumtech.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Vera.1?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Vera.1 is an AI infant monitor made by Inspirium Tech, a startup based in Ahmedabad, India. It watches your baby's breathing, temperature, heart rate and cries from across the room, with nothing attached to the baby, and tells you what's actually going on instead of just sounding an alarm." }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Vera.1 monitor a baby without any wearables?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It uses a camera, an infrared thermal sensor and a microphone together. Breathing shows up as movement, fever shows up as heat, and cries carry patterns. The AI reads all three at once, so nothing needs to touch your baby's skin. No socks, no straps, no wires." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can it really tell why a baby is crying?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It tells cries apart by pitch, length and pattern, then combines that with what the other sensors see. So instead of 'your baby is crying,' you get 'probably hungry, it's been about three hours since the last feed.' When a cry looks like real distress, it treats it as an emergency and calls you." }
+        },
+        {
+          "@type": "Question",
+          "name": "What health problems can Vera.1 catch early?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A fever building before you'd feel it by hand. Changes in breathing rhythm. Dangerous situations, like a blanket over the face. Signs like these usually show up before an emergency does, and catching them early is the whole point of the product." }
+        },
+        {
+          "@type": "Question",
+          "name": "How is Vera.1 different from Nanit, Owlet or Cubo AI?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nanit and Cubo are smart cameras; they can't read vitals. Owlet and Masimo's Stork read vitals but need something strapped to the baby. Vera.1 does both jobs at once, vitals plus cry understanding, with nothing worn by the baby." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Vera.1 meant for hospitals too?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We're starting with homes, and working with NICUs and pediatric hospitals to validate it clinically. Today's NICU sensors stick to a newborn's skin and can damage it. Vera.1 reads the same signals from a distance." }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does Vera.1 cost and when can I get it?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The launch price is ₹30,000, which includes the first year's subscription. We're launching first in Indian metros: Mumbai, Bengaluru, Delhi, Pune and Ahmedabad. Write to contact@inspiriumtech.com to get on the early list." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I see Vera.1 working before I buy?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. A live prototype of the parent dashboard is already online, and we're happy to do a proper demo. Email contact@inspiriumtech.com and we'll set it up." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="bg-field"></div>
@@ -722,6 +863,51 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-tag">Questions</span>
+        <h2>Things people <em>actually ask us.</em></h2>
+        <p>From parents, doctors, and investors. Straight answers.</p>
+      </div>
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary>What is Vera.1?<span class="plus">+</span></summary>
+          <p class="a">Vera.1 is an AI infant monitor made by Inspirium Tech, a startup based in Ahmedabad, India. It watches your baby's breathing, temperature, heart rate and cries from across the room, with nothing attached to the baby, and tells you what's actually going on instead of just sounding an alarm.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How does it monitor a baby without any wearables?<span class="plus">+</span></summary>
+          <p class="a">It uses a camera, an infrared thermal sensor and a microphone together. Breathing shows up as movement, fever shows up as heat, and cries carry patterns. The AI reads all three at once, so nothing needs to touch your baby's skin. No socks, no straps, no wires.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can it really tell why a baby is crying?<span class="plus">+</span></summary>
+          <p class="a">It tells cries apart by pitch, length and pattern, then combines that with what the other sensors see. So instead of "your baby is crying," you get "probably hungry, it's been about three hours since the last feed." When a cry looks like real distress, it treats it as an emergency and calls you.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What health problems can it catch early?<span class="plus">+</span></summary>
+          <p class="a">A fever building before you'd feel it by hand. Changes in breathing rhythm. Dangerous situations, like a blanket over the face. Signs like these usually show up before an emergency does, and catching them early is the whole point of the product.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How is Vera.1 different from Nanit, Owlet or Cubo AI?<span class="plus">+</span></summary>
+          <p class="a">Nanit and Cubo are smart cameras; they can't read vitals. Owlet and Masimo's Stork read vitals but need something strapped to the baby. Vera.1 does both jobs at once, vitals plus cry understanding, with nothing worn by the baby.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is it meant for hospitals too?<span class="plus">+</span></summary>
+          <p class="a">Yes. We're starting with homes, and working with NICUs and pediatric hospitals to validate it clinically. Today's NICU sensors stick to a newborn's skin and can damage it. Vera.1 reads the same signals from a distance.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How much does it cost and when can I get it?<span class="plus">+</span></summary>
+          <p class="a">The launch price is ₹30,000, which includes the first year's subscription. We're launching first in Indian metros: Mumbai, Bengaluru, Delhi, Pune and Ahmedabad. Write to <a href="mailto:contact@inspiriumtech.com" style="color:var(--cyan)">contact@inspiriumtech.com</a> to get on the early list.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I see it working before I buy?<span class="plus">+</span></summary>
+          <p class="a">Yes. A live prototype of the parent dashboard is already online, and we're happy to do a proper demo. Email <a href="mailto:contact@inspiriumtech.com" style="color:var(--cyan)">contact@inspiriumtech.com</a> and we'll set it up.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- FINAL CTA / DEMO -->
   <section class="final" id="contact">
     <div class="wrap">
@@ -764,6 +950,7 @@
           <a href="#roadmap">Roadmap</a>
           <a href="#market">Market</a>
           <a href="#team">Team</a>
+          <a href="#faq">FAQ</a>
         </div>
         <div class="foot-col">
           <h5>Connect</h5>
