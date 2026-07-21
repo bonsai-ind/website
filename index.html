@@ -322,7 +322,7 @@
   .tiers { display: flex; flex-direction: column; gap: 0; }
   .tier {
     display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center;
-    padding: 22px 4px; border-top: 1px solid var(--line);
+    padding: 22px 18px; border-top: 1px solid var(--line);
   }
   .tier .rank { font-family: 'Fraunces', serif; font-size: 1.4rem; color: var(--fg-faint); width: 28px; }
   .tier .t-name { font-weight: 500; font-size: 1.05rem; }
@@ -330,7 +330,7 @@
   .tier .t-price { text-align: right; color: var(--fg-dim); font-size: 0.92rem; font-weight: 300; }
   .tier.hot { background: linear-gradient(90deg, rgba(240,178,122,0.06), transparent); border-radius: 12px; }
   .tier.hot .rank, .tier.hot .t-name { color: var(--amber-bright); }
-  .badge { display: inline-block; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); background: var(--amber); padding: 3px 10px; border-radius: 100px; font-weight: 600; margin-left: 10px; vertical-align: middle; }
+  .tier .t-name span.badge { display: inline-block; width: auto; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); background: var(--amber); padding: 3px 10px; border-radius: 100px; font-weight: 600; margin: 0 0 0 10px; vertical-align: middle; }
 
   /* ---------- moat / pillars ---------- */
   .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
