@@ -220,6 +220,9 @@
     border: 1px solid var(--line-2);
     display: flex; align-items: center; justify-content: center;
   }
+  .prod-visual .crib-scene { width: 100%; height: 100%; display: block; }
+  @keyframes scanfade { 0%, 100% { opacity: 0.12; } 50% { opacity: 0.85; } }
+  .crib-scene .scan { animation: scanfade 4s var(--ease) infinite; }
   .prod-visual .rings { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
   .prod-visual .ring { position: absolute; border: 1px solid var(--line-2); border-radius: 50%; }
   @keyframes breathe {
@@ -671,15 +674,116 @@
   <section class="product" id="intelligence">
     <div class="wrap prod-grid">
       <div class="prod-visual reveal">
-        <div class="rings" aria-hidden="true">
-          <div class="ring pulse" style="width:88%;height:88%;animation-delay:0s"></div>
-          <div class="ring pulse" style="width:66%;height:66%;animation-delay:.6s"></div>
-          <div class="ring pulse" style="width:46%;height:46%;animation-delay:1.2s"></div>
-        </div>
-        <div class="device">
-          <div class="lens"></div>
-          <div class="glow-dot"></div>
-        </div>
+        <svg class="crib-scene" viewBox="0 0 420 420" role="img" aria-label="Coresift device on a crib rail, watching over a sleeping baby without touching them">
+          <defs>
+            <linearGradient id="cs-blanket" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#c9925e"/><stop offset="1" stop-color="#8a5f3c"/>
+            </linearGradient>
+            <linearGradient id="cs-dev" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2a3644"/><stop offset="1" stop-color="#141a22"/>
+            </linearGradient>
+            <radialGradient id="cs-lens" cx="0.38" cy="0.34" r="0.9">
+              <stop offset="0" stop-color="#3d4f60"/><stop offset="0.55" stop-color="#0a1016"/><stop offset="1" stop-color="#05080b"/>
+            </radialGradient>
+          </defs>
+
+          <!-- night sparkles -->
+          <g fill="#6fd6d0" opacity="0.35">
+            <path d="M62 64 l1.4 3.6 3.6 1.4 -3.6 1.4 -1.4 3.6 -1.4 -3.6 -3.6 -1.4 3.6 -1.4 Z"/>
+            <path d="M104 40 l1 2.6 2.6 1 -2.6 1 -1 2.6 -1 -2.6 -2.6 -1 2.6 -1 Z" opacity="0.7"/>
+            <circle cx="150" cy="66" r="1.6" opacity="0.6"/>
+            <circle cx="80" cy="104" r="1.3" opacity="0.5"/>
+          </g>
+          <g fill="#f7c896" opacity="0.3">
+            <path d="M352 250 l1.2 3 3 1.2 -3 1.2 -1.2 3 -1.2 -3 -3 -1.2 3 -1.2 Z"/>
+            <circle cx="58" cy="150" r="1.4"/>
+          </g>
+
+          <!-- scan arcs from the device toward the baby -->
+          <g fill="none" stroke="#6fd6d0" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1 9">
+            <path class="scan" d="M 293.1 189.4 A 40 40 0 0 1 260.2 146.5" style="animation-delay:0s"/>
+            <path class="scan" d="M 288.2 217 A 68 68 0 0 1 232.3 144.1" style="animation-delay:.7s"/>
+            <path class="scan" d="M 283.3 244.5 A 96 96 0 0 1 204.4 141.6" style="animation-delay:1.4s"/>
+          </g>
+
+          <!-- vitals chip -->
+          <g class="scan" style="animation-delay:2s">
+            <rect x="156" y="106" width="92" height="28" rx="14" fill="rgba(21,28,38,0.9)" stroke="rgba(255,255,255,0.12)"/>
+            <path d="M172 120 c0-5 7-5 7 0 c0 3.5-7 8-7 8 s-7-4.5-7-8 c0-5 7-5 7 0 Z" transform="translate(0,-4) scale(0.9)" fill="#f0b27a"/>
+            <polyline points="186,120 194,120 198,112 203,127 208,117 212,120 236,120" fill="none" stroke="#6fd6d0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+
+          <!-- crib -->
+          <g>
+            <!-- back legs / posts with finials -->
+            <circle cx="81" cy="166" r="6" fill="#1d2733" stroke="rgba(255,255,255,0.14)"/>
+            <circle cx="339" cy="166" r="6" fill="#1d2733" stroke="rgba(255,255,255,0.14)"/>
+            <rect x="76" y="172" width="10" height="186" rx="5" fill="#1d2733" stroke="rgba(255,255,255,0.12)"/>
+            <rect x="334" y="172" width="10" height="186" rx="5" fill="#1d2733" stroke="rgba(255,255,255,0.12)"/>
+            <!-- bars -->
+            <g stroke="rgba(255,255,255,0.14)" stroke-width="2.5" stroke-linecap="round">
+              <line x1="106" y1="200" x2="106" y2="300"/><line x1="132" y1="200" x2="132" y2="300"/>
+              <line x1="158" y1="200" x2="158" y2="300"/><line x1="184" y1="200" x2="184" y2="300"/>
+              <line x1="210" y1="200" x2="210" y2="300"/><line x1="236" y1="200" x2="236" y2="300"/>
+              <line x1="262" y1="200" x2="262" y2="300"/><line x1="288" y1="200" x2="288" y2="300"/>
+              <line x1="314" y1="200" x2="314" y2="300"/>
+            </g>
+            <!-- top rail -->
+            <rect x="78" y="192" width="264" height="9" rx="4.5" fill="#232f3d" stroke="rgba(255,255,255,0.16)"/>
+            <!-- mattress -->
+            <rect x="88" y="298" width="244" height="22" rx="10" fill="#1a2330" stroke="rgba(255,255,255,0.12)"/>
+            <!-- floor shadow -->
+            <ellipse cx="210" cy="366" rx="150" ry="9" fill="rgba(0,0,0,0.35)"/>
+          </g>
+
+          <!-- sleeping baby -->
+          <g>
+            <animateTransform attributeName="transform" type="translate" values="0 0; 0 -1.6; 0 0" dur="4.5s" repeatCount="indefinite"/>
+            <!-- pillow -->
+            <ellipse cx="140" cy="294" rx="30" ry="9" fill="#232f3d"/>
+            <!-- swaddle body -->
+            <rect x="152" y="260" width="116" height="40" rx="20" fill="url(#cs-blanket)"/>
+            <!-- blanket folds -->
+            <path d="M178 264 q10 16 0 34 M206 262 q10 18 0 38" fill="none" stroke="rgba(0,0,0,0.22)" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- feet bump -->
+            <circle cx="262" cy="272" r="9" fill="#8a5f3c"/>
+            <!-- head -->
+            <circle cx="138" cy="272" r="24" fill="#edc39e"/>
+            <!-- hair curl -->
+            <path d="M132 250 q6 -6 12 0" fill="none" stroke="#8a5f3c" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- ear -->
+            <circle cx="120" cy="274" r="4" fill="#e0b28c"/>
+            <!-- closed eyes -->
+            <path d="M128 272 q4 3.5 8 0 M144 272 q4 3.5 8 0" fill="none" stroke="#7a5236" stroke-width="2.2" stroke-linecap="round"/>
+            <!-- tiny nose + mouth -->
+            <circle cx="138" cy="279" r="1.6" fill="#d9a27a"/>
+            <path d="M135 285 q3 2.5 6 0" fill="none" stroke="#b97f57" stroke-width="1.8" stroke-linecap="round"/>
+            <!-- blush -->
+            <circle cx="125" cy="280" r="3" fill="#e8a0a8" opacity="0.45"/>
+            <circle cx="151" cy="280" r="3" fill="#e8a0a8" opacity="0.45"/>
+          </g>
+
+          <!-- zzz -->
+          <g fill="#f7c896" font-family="Fraunces, Georgia, serif" font-style="italic">
+            <text x="163" y="238" font-size="19" opacity="0.85">z<animate attributeName="opacity" values="0.2;0.9;0.2" dur="3s" repeatCount="indefinite"/></text>
+            <text x="178" y="222" font-size="14" opacity="0.6">z<animate attributeName="opacity" values="0.2;0.9;0.2" dur="3s" begin="0.5s" repeatCount="indefinite"/></text>
+            <text x="190" y="209" font-size="10" opacity="0.45">z<animate attributeName="opacity" values="0.2;0.9;0.2" dur="3s" begin="1s" repeatCount="indefinite"/></text>
+          </g>
+
+          <!-- Coresift device clamped on the rail -->
+          <g transform="rotate(-8 300 165)">
+            <!-- clamp -->
+            <rect x="290" y="186" width="20" height="14" rx="4" fill="#232f3d" stroke="rgba(255,255,255,0.16)"/>
+            <rect x="296" y="176" width="8" height="14" rx="3" fill="#232f3d"/>
+            <!-- head -->
+            <rect x="278" y="126" width="44" height="54" rx="13" fill="url(#cs-dev)" stroke="rgba(255,255,255,0.18)"/>
+            <circle cx="300" cy="148" r="11" fill="url(#cs-lens)" stroke="rgba(255,255,255,0.12)"/>
+            <circle cx="296.5" cy="144.5" r="3" fill="#6fd6d0" opacity="0.9"/>
+            <circle cx="300" cy="170" r="2.6" fill="#f0b27a">
+              <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+            </circle>
+          </g>
+        </svg>
       </div>
       <div class="reveal d1">
         <div class="prod-name">The Intelligence</div>
